@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tariq Aziz | Associate Professor - UAF</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --uaf-green: #2e7d32;
+            --dark-green: #1b5e20;
+            --light-bg: #f9fbf9;
+            --accent-white: #ffffff;
+            --text-main: #333333;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--light-bg);
+            color: var(--text-main);
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 280px;
+            height: 100vh;
+            background: var(--uaf-green);
+            color: white;
+            position: fixed;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-logo-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-logo-box img { height: 50px; width: auto; }
+
+        nav h3 { font-size: 1.2rem; margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; }
+
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { margin-bottom: 15px; }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+        }
+        nav ul li a i { width: 25px; margin-right: 10px; }
+        nav ul li a:hover { color: #a5d6a7; transform: translateX(5px); }
+
+        /* Main Content */
+        main {
+            margin-left: 280px;
+            width: calc(100% - 280px);
+            padding: 40px 60px;
+        }
+
+        /* Cover Image Section - Clean white separation */
+        .cover-container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .profile-pic {
+            width: 220px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 4px solid var(--light-bg);
+        }
+
+        .intro-text h1 { color: var(--uaf-green); margin-top: 0; font-size: 2.2rem; }
+        .intro-text p { font-size: 1.1rem; line-height: 1.7; color: #555; }
+
+        /* General Styling */
+        section { margin-bottom: 50px; scroll-margin-top: 40px; }
+        h2 { color: var(--uaf-green); border-bottom: 2px solid var(--uaf-green); padding-bottom: 8px; margin-bottom: 25px; }
+
+        .data-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { text-align: left; background: #f1f8e9; color: var(--dark-green); padding: 12px; font-weight: 600; border-bottom: 2px solid var(--uaf-green); }
+        td { padding: 12px; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+        tr:hover { background: #f9f9f9; }
+
+        .pub-item { margin-bottom: 15px; padding-left: 15px; border-left: 3px solid #ddd; }
+        .pub-year { font-weight: bold; color: var(--uaf-green); margin-top: 25px; display: block; }
+
+        /* Contact Badges */
+        .contact-pill {
+            display: inline-block;
+            background: var(--light-bg);
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 0.85rem;
+            color: var(--uaf-green);
+            text-decoration: none;
+            border: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 900px) {
+            nav { width: 100%; height: auto; position: relative; }
+            main { margin-left: 0; width: 100%; }
+            body { flex-direction: column; }
+            .cover-container { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo-box">
+        <img src="uaf_logo.png" alt="UAF Logo"> <img src="ini_logo.png" alt="INI Logo"> </div>
+    <h3>Dr. Tariq Aziz</h3>
+    <ul>
+        <li><a href="#about"><i class="fas fa-user-tie"></i> Introduction</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#projects"><i class="fas fa-microscope"></i> Research Projects</a></li>
+        <li><a href="#supervision"><i class="fas fa-users-cog"></i> Supervision</a></li>
+        <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
+        <li><a href="#events"><i class="fas fa-calendar-alt"></i> Events & Talks</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="about">
+        <div class="cover-container">
+            <img src="1000071938.jpg" alt="Dr. Tariq Aziz" class="profile-pic">
+            <div class="intro-text">
+                <h1>Dr. Tariq Aziz</h1>
+                <p><strong>Associate Professor (Soil Science)</strong><br>
+                University of Agriculture, Faisalabad (UAF)</p>
+                
+                <p>Dr. Aziz serves as the Regional Director for South Asia at the International Nitrogen Initiative (INI) and is the lead partner from Pakistan in the global "South Asia Nitrogen Hub". With over 120 research articles, his work focuses on improving fertilizer use efficiency, nutrient recycling, and pollution mitigation.</p>
+                
+                <div style="margin-top: 15px;">
+                    <a href="mailto:draziz@uaf.edu.pk" class="contact-pill"><i class="fas fa-envelope"></i> draziz@uaf.edu.pk</a>
+                    <a href="tel:+923338962334" class="contact-pill"><i class="fas fa-phone"></i> +92 333 896 2334</a>
+                    <a href="https://orcid.org/0000-0002-4300-3813" target="_blank" class="contact-pill"><i class="fab fa-orcid"></i> ORCID Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="data-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Organization</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Principal, Sub-Campus Depalpur</td><td>University of Agriculture, Faisalabad</td><td>2018 - Oct 2023</td></tr>
+                    <tr><td>Project Director (HEC Funded)</td><td>UAF / HEC (Rs. 889 Million)</td><td>2021 - 2022</td></tr>
+                    <tr><td>Associate Professor</td><td>University of Agriculture, Faisalabad</td><td>2013 - To Date</td></tr>
+                    <tr><td>Adjunct Senior Lecturer</td><td>University of Western Australia</td><td>2014 - To Date</td></tr>
+                    <tr><td>Lecturer</td><td>University of Agriculture, Faisalabad</td><td>2006 - 2008</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Funded Research Projects</h2>
+        <div class="data-card">
+            <div class="pub-item"><strong>South Asian Nitrogen Hub (PI - Pakistan Chapter)</strong>: Funded by UKRI under GCRF. Total project cost: £19.6 Million (2019-2023).</div>
+            <div class="pub-item"><strong>Bio-Nano-Fertilizers (PI)</strong>: Enhancing nutrient use efficiency through microbially synthesized fertilizers. Funded by HEC (Rs. 3.65 Million).</div>
+            <div class="pub-item"><strong>Sustainable Bioenergy Production (Team Leader)</strong>: Collaborative project funded by the German Government (Euro 100,000).</div>
+            <div class="pub-item"><strong>Zinc Biofortification (Co-PI)</strong>: Enhancing Zn content in wheat and lentils for rural Punjab. Funded by HEC.</div>
+        </div>
+    </section>
+
+    <section id="supervision">
+        <h2>Supervision of Research Students</h2>
+        <div class="data-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>M.Sc. (Hons.) Produced</th>
+                        <th>Ph.D. Produced</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Supervisor</strong></td><td>48</td><td>5</td></tr>
+                    <tr><td><strong>Supervisory Committee Member</strong></td><td>90</td><td>10</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Key Publications</h2>
+        <div class="data-card">
+            <span class="pub-year">Books</span>
+            <div class="pub-item"><strong>Tariq Aziz</strong> et al. (Eds) (2021). <em>Nitrogen Assessment: Pakistan as a case study</em>. Elsevier Academic Press.</div>
+            <div class="pub-item">Brownlie, W.J., <strong>Aziz, T.</strong>, et al. (2024). <em>Nitrogen Mitigation Guidance</em>. International Nitrogen Management System, UK.</div>
+            
+            <span class="pub-year">Selected Articles (2025-2024)</span>
+            <div class="pub-item">Wakeel, A., ... <strong>Aziz, T.</strong> (2025). Managing Fertilizer Rates and Tillage Depth to Improve Nitrogen Use Efficiency. <em>Journal of Soil Science and Plant Nutrition</em>.</div>
+            <div class="pub-item">Rasheed, N., ... <strong>Aziz, T.</strong> (2024). Zinc portioning and allocation patterns in lentil genotypes. <em>Frontiers in Plant Science</em>.</div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
